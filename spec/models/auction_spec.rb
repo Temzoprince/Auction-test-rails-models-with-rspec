@@ -6,8 +6,7 @@ RSpec.describe Auction, type: :model do
     described_class.new(title: 'Anything',
                         description: 'Lorem Ipsum',
                         start_date: DateTime.now,
-                        end_date: DateTime.now + 1.week,
-                       ) #user_id: 1)
+                        end_date: DateTime.now + 1.week)
   }
 
   it 'is valid with valid attributes' do
