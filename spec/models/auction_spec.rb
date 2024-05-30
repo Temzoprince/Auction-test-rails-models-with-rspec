@@ -8,6 +8,10 @@ RSpec.describe Auction, type: :model do
                         end_date: DateTime.now + 1.week)
   }
 
+  describe 'Associations' do
+    it { should_belong_to(:user).without_validating_presence }
+  end
+
   it 'is valid with valid attributes' do
     expect(subject).to be_valid
   end
