@@ -9,7 +9,7 @@ RSpec.describe Auction, type: :model do
   }
 
   describe 'Associations' do
-    it { should_belong_to(:user).without_validating_presence }
+    it { should belong_to(:user).without_validating_presence }
   end
 
   it 'is valid with valid attributes' do
