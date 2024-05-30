@@ -1,7 +1,6 @@
 require 'rails_helper'
 
 RSpec.describe Auction, type: :model do
-
   subject {
     described_class.new(title: 'Anything',
                         description: 'Lorem Ipsum',
